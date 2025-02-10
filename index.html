@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand"><i class="fa-brands fa-instagram fa-lg"></i><b>Instagram</b></a>
+      <div class="d-flex justify-content-end gap-1">
+
+        <!-- Modal -->
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Add the caption of your post here
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Engranaje -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear fa-lg"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item active" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">privacy and data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Cambio de muestra de imagenes -->
+  <nav>
+    <div class="d-flex justify-content-center mt-5 mb-3">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true">
+          <i class="fa-solid fa-table-cells fa-lg"></i>
+        </button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square fa-lg"></i>
+        </button>
+      </div>
+  </nav>
+
+  <!-- Imagenes en cuadrados -->
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="d-flex justify-content-center">
+        <div class="row mb-2">
+          <div class="col-4">
+            <img src="https://media.gettyimages.com/id/458474687/es/foto/ford-shelby-gt500.jpg?s=612x612&w=0&k=20&c=4bJ8217vv1ZTJrU1OLkV3w_CmMva5iMNXsQ6ueXNvuI="
+              height="250" width="350" />
+          </div>
+          <div class="col-4">
+            <img src="https://media.gettyimages.com/id/171317661/es/foto/ford-shelby-gt500.jpg?s=612x612&w=0&k=20&c=zRlvtQbH_zzze_QlmsIYlFrWiKPLeT4OUCqzVCCi3vI=" height="250" width="350" />
+          </div>
+          <div class="col-4">
+            <img src="https://media.gettyimages.com/id/492954774/es/foto/a-super-snake-mustang-sports-car-sits-parked-on-the-factory-floor-while-receiving-upgrades-at.jpg?s=612x612&w=0&k=20&c=FLL5KTqsf99cEhZmaA1u3DezCt3p2641apqiPStiuj0="
+              height="250" width="350" />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="row mb-2">
+          <div class="col-4">
+            <img
+              src="https://media.gettyimages.com/id/1363586932/es/foto/maldon-united-kindom-the-lamborghini-urus-on-display-at-the-warren-estate-in-maldon-the-car.jpg?s=612x612&w=0&k=20&c=D4VJYiPoqqoWXP5pue_R7hdcTTXgFw-mkHI79lVd9tE="
+              height="250" width="350" />
+          </div>
+          <div class="col-4">
+            <img src="https://media.gettyimages.com/id/1168957748/es/foto/hatfield-united-kindom-the-lamborghini-urus-this-car-was-part-of-essendon-country-clubs.jpg?s=612x612&w=gi&k=20&c=uC8RtqCdRNwSfAL5bVHznrs1NK2veNHsXmtqj8Wu-uY=" height="250"
+              width="350" />
+          </div>
+          <div class="col-4">
+            <img src="https://media.gettyimages.com/id/2177651163/es/foto/a-lamborghini-logo-is-seen-on-the-wheel-of-a-lamborghini-urus-suv-car-in-warsaw-poland-on-12.jpg?s=612x612&w=0&k=20&c=Y5xYACSLtqM0CWTAVVETo1cx7um1NiSMtVbT-O-zcTE=" height="250" width="350" />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="row">
+          <div class="col-4">
+            <img src="https://media.istockphoto.com/id/613012888/es/foto/nissan-skyline-gt-r-r34.jpg?s=612x612&w=0&k=20&c=up2JbPfQcJ21-u07-cNmTDYKAtpBTUN-J4H4igj9nzg=" height="250" width="350" />
+          </div>
+          <div class="col-4">
+            <img src="https://media.istockphoto.com/id/1154158828/es/foto/la-silueta-azul-de-nissan-gtr-r34-se-encuentra-en-el-c%C3%A9sped.jpg?s=612x612&w=0&k=20&c=zYvwm0bZxbizlv2oGplRWwlw0M7lLTJnd6a9HmQqenY=" height="250" width="350" />
+          </div>
+          <div class="col-4">
+            <img src="https://media.istockphoto.com/id/613013078/es/foto/nissan-skyline-gt-r-r34.jpg?s=612x612&w=0&k=20&c=dpZSI_HY5aKs2nWL1UZVPY3RPjf3fqnNRGYJ1y1L1oE=" height="250" width="350" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Imagenes en lista -->
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+      <!-- Imagen 1 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <div>
+                <h3>Ford Mustang!</h3>
+              </div>
+              <span class="d-flex justify-content-end"><b>05/25</b></span>
+            </div>
+            <img src="https://media.gettyimages.com/id/458474687/es/foto/ford-shelby-gt500.jpg?s=612x612&w=0&k=20&c=4bJ8217vv1ZTJrU1OLkV3w_CmMva5iMNXsQ6ueXNvuI=
+            " height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>9000 Likes</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 2 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>Ford Mustang!</h3>
+              <span class="d-flex justify-content-end"><b>05/25</b></span>
+            </div>
+            <img src="https://media.gettyimages.com/id/171317661/es/foto/ford-shelby-gt500.jpg?s=612x612&w=0&k=20&c=zRlvtQbH_zzze_QlmsIYlFrWiKPLeT4OUCqzVCCi3vI=
+            " height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>19,000 Likes</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 3 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>Ford Mustang!</h3>
+              <span class="d-flex justify-content-end"><b>05/25</b></span>
+            </div>
+            <img src="https://media.gettyimages.com/id/492954774/es/foto/a-super-snake-mustang-sports-car-sits-parked-on-the-factory-floor-while-receiving-upgrades-at.jpg?s=612x612&w=0&k=20&c=FLL5KTqsf99cEhZmaA1u3DezCt3p2641apqiPStiuj0=" height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>9,999,000 Likes</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 4 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>Lamborghini Urus!</h3>
+              <span class="d-flex justify-content-end"><b>03/24</b></span>
+            </div>
+            <img src="
+            https://media.gettyimages.com/id/1363586932/es/foto/maldon-united-kindom-the-lamborghini-urus-on-display-at-the-warren-estate-in-maldon-the-car.jpg?s=612x612&w=0&k=20&c=D4VJYiPoqqoWXP5pue_R7hdcTTXgFw-mkHI79lVd9tE=
+            " height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>10,000,000 Likes</b><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 5 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>Lamborghini Urus!</h3>
+              <span class="d-flex justify-content-end"><b>03/24</b></span>
+            </div>
+            <img src="https://media.gettyimages.com/id/1168957748/es/foto/hatfield-united-kindom-the-lamborghini-urus-this-car-was-part-of-essendon-country-clubs.jpg?s=612x612&w=gi&k=20&c=uC8RtqCdRNwSfAL5bVHznrs1NK2veNHsXmtqj8Wu-uY=" height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>999 Likes</b><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>Lamborghini Urus!</h3>
+              <span class="d-flex justify-content-end"><b>03/24</b></span>
+            </div>
+            <img src="https://media.gettyimages.com/id/2177651163/es/foto/a-lamborghini-logo-is-seen-on-the-wheel-of-a-lamborghini-urus-suv-car-in-warsaw-poland-on-12.jpg?s=612x612&w=0&k=20&c=Y5xYACSLtqM0CWTAVVETo1cx7um1NiSMtVbT-O-zcTE=" height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>9,040 Likes</b><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 7 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>R34 GT-R!</h3>
+              <span class="d-flex justify-content-end"><b>02/23</b></span>
+            </div>
+            <img src="https://media.istockphoto.com/id/613012888/es/foto/nissan-skyline-gt-r-r34.jpg?s=612x612&w=0&k=20&c=up2JbPfQcJ21-u07-cNmTDYKAtpBTUN-J4H4igj9nzg=" height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>9,900 Likes</b><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 8 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>R34 GT-R!</h3>
+              <span class="d-flex justify-content-end"><b>02/23</b></span>
+            </div>
+            <img src="https://media.istockphoto.com/id/1154158828/es/foto/la-silueta-azul-de-nissan-gtr-r34-se-encuentra-en-el-c%C3%A9sped.jpg?s=612x612&w=0&k=20&c=zYvwm0bZxbizlv2oGplRWwlw0M7lLTJnd6a9HmQqenY=
+            " height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>999,000 Likes</b><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 9 -->
+      <div class="container mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <div class="post-head border bg-light p-2">
+              <h3>R34 GT-R!</h3>
+              <span class="d-flex justify-content-end"><b>02/23</b></span>
+            </div>
+            <img src="https://media.istockphoto.com/id/613013078/es/foto/nissan-skyline-gt-r-r34.jpg?s=612x612&w=0&k=20&c=dpZSI_HY5aKs2nWL1UZVPY3RPjf3fqnNRGYJ1y1L1oE=" height="300" width="648" />
+            <div class="post-foot border bg-light p-3">
+              <span><b>9,943,000 Likes</b><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+       
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
